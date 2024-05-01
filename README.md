@@ -76,3 +76,16 @@ Meskipun memiliki kelebihan dibanding protokol lainnya, metode HTTP/2 juga memil
    - Belum semua platform mendukung protokol HTTP/2
    - Meskipun cenderung mencegah adanya overhead, protokol ini masih memiliki kemungkinan overhead ketika terjadi kasus tertentu seperti pada koneksi yang lambat atau dengan _payload_ kecil
 </details>
+
+<details>
+<summary>9. </summary>
+
+Model _request-response_ REST API cenderung bersifat satu arah. Hal ini menyebabkan komunikasi bersifat kurang responsif untuk kebutuhan komunikasi yang _real time_. Di sisi lain, metode _bi-directional_ pada gRPC memungkinkan komunikasi dua arah yang lebih efektif dan responsif. Hal ini dapat diketahui karena, seperti yang disebutkan pada nomor 1, _bi-directional gRPC_ memungkinkan komunikasi berupa banyak request-response antara _client_ dan _server_. Dengan demikian, _client_ dan _server_ dapat bertukar data secara terus menerus dalam waktu instan
+</details>
+
+<details>
+<summary>10. </summary>
+
+Terdapat beberapa implikasi dari penggunaan _schema-based approach_ pada gRPC menggunakan _protocol buffer_ dibandingkan bentuk alami _schema-less_ dari JSON di REST API. Implikasi tersebut dapat berupa keuntungan maupun kekurangan dari penggunannya. Beberapa keuntungannya, antara lain adalah validasi data yang lebih ketat, konsistensi struktur, dan performa yang lebih baik. Meskipun demikian, masih terdapat kekurangan seperti keterbatasan fleksibilitas, dan keperluan manajemen skema yang lebih teliti.
+
+</details>
