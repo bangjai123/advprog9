@@ -36,5 +36,7 @@ Penggunaan `tokio_stream::wrappers::ReceiverStream` untuk _streaming response_ p
 
 </details>
 
-   
-</details> 
+<details> 
+<summary>5. </summary>
+
+Terdapat beberapa cara yang dapat dilakukan untuk menunjang _code reuse_, modularitas, dan _maintainability_ kode Rust gRPC. Beberapa cara tersebut adalah dengan menggunakan traits, menggunakan modul, menggunakan template generik, dan mengimplementasikan middleware dan interceptors. Dengan penerapan tersebut, kode yang dihasilkan diharapkan memiliki _maintainability_ yang lebih tinggi.
