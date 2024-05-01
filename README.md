@@ -17,6 +17,16 @@ Penerapan gRPC pada Rust memiliki beberapa celah yang dapat menjadi risiko. Bebe
 </details>
 
 <details>
-   <summary>3.</summary>
+<summary>3.</summary>
+Terdapat beberapa hal yang mungkin menjadi tantangan dari penggunaan metode tersebut. Beberapa di antaranya adalah sebagai berikut.
+
+   - **Sinkronisasi pesan**, perlu memastikan bahwa pesan antar pihak tiba dalam urutan yan seharusnya dan tidak ada pesan yang hilang di tengah jalan.
+   - **Manajemen koneksi**, koneksi yang stabil penting untuk menjaga komunikasi antara _client_ dan server
+   - **_Error handling_**, perlu ada _error handling_ yang baik untuk memulihkan koneksi dan menjaga agar data tidak hilang atau terputus
+   - **_Scalability_**, program perlu memiliki kemampuan untuk menangani banyak koneksi dengan efisien
+   - **_Security_**, perlu ada penerapan perlindungan keamanan
+   - **_Code maintainability_**
+
+
    
 </details> 
