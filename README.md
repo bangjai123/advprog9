@@ -27,6 +27,7 @@ Terdapat beberapa hal yang mungkin menjadi tantangan dari penggunaan metode ters
    - **_Scalability_**, program perlu memiliki kemampuan untuk menangani banyak koneksi dengan efisien
    - **_Security_**, perlu ada penerapan perlindungan keamanan
    - **_Code maintainability_**
+</details>
 
 <details>
 <summary>4. </summary>
