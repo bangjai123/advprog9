@@ -16,4 +16,7 @@ Penerapan gRPC pada Rust memiliki beberapa celah yang dapat menjadi risiko. Bebe
    - **Pengelolaan kunci dan sertifikat:** Rotasi kunci dan sertifikat secara regular dan penyimpanan kunci yang aman (misalnya dengan menggunakan layanan manajemen kunci atau modul keamanan perangkat keras)
 </details>
 
-3. 
+<details>
+   <summar>3.</summar>
+   
+</details> 
