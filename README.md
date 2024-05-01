@@ -18,6 +18,7 @@ Penerapan gRPC pada Rust memiliki beberapa celah yang dapat menjadi risiko. Bebe
 
 <details>
 <summary>3.</summary>
+   
 Terdapat beberapa hal yang mungkin menjadi tantangan dari penggunaan metode tersebut. Beberapa di antaranya adalah sebagai berikut.
 
    - **Sinkronisasi pesan**, perlu memastikan bahwa pesan antar pihak tiba dalam urutan yan seharusnya dan tidak ada pesan yang hilang di tengah jalan.
@@ -27,6 +28,12 @@ Terdapat beberapa hal yang mungkin menjadi tantangan dari penggunaan metode ters
    - **_Security_**, perlu ada penerapan perlindungan keamanan
    - **_Code maintainability_**
 
+<details>
+<summary>4. </summary>
+   
+Penggunaan `tokio_stream::wrappers::ReceiverStream` untuk _streaming response_ pada gRPC memiliki beberapa kelebihan. Kelebihan yang dimiliki dari penggunaannya di antaranya adalah terintegrasi dengan baik dengan ekosistem Tokio dan Memudahkan implementasi _streaming_. Di sisi lain, penggunaan tersebut juga memiliki kekurangan. Beberapa kekurangan tersebut di antaranya adalah kontrol terbatas atas Backpressure dan ketergantungan pada Tokio
+
+</details>
 
    
 </details> 
