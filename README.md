@@ -40,3 +40,39 @@ Penggunaan `tokio_stream::wrappers::ReceiverStream` untuk _streaming response_ p
 <summary>5. </summary>
 
 Terdapat beberapa cara yang dapat dilakukan untuk menunjang _code reuse_, modularitas, dan _maintainability_ kode Rust gRPC. Beberapa cara tersebut adalah dengan menggunakan traits, menggunakan modul, menggunakan template generik, dan mengimplementasikan middleware dan interceptors. Dengan penerapan tersebut, kode yang dihasilkan diharapkan memiliki _maintainability_ yang lebih tinggi.
+
+</details>
+
+<details>
+<summary>6. </summary>
+
+Agar dapat menangani proses pembayaran dengan logika yang lebih rumit, terdapat beberapa hal yang dapat ditambakan ke `MyPaymentService`. Beberapa hal tersebut di antaranya adalah sebagai berikut.
+   - Melakukan validasi menyeluruh terhadap data yang berhubungan dengan pembayaran
+   - Bekerja sama dengan gateway pembayaran eksternal untuk menangani transaksi nyata
+   - Pastikan sistem dapat mengatasi kesalahan melalui mekanisme _retry_ dan strategi _fallback_.
+   - Lakukan perekaman log aktivitas secara detail untuk mempermudah proses audit
+   - Konfirmasi hasil pembayaran harus dikirim kepada pelanggan menggunakan metode komunikasi yang efektif
+   - 
+</details>
+
+<details>
+<summary>7. </summary>
+   
+Adopsi gRPC sebagai protokol komunikasi memiliki dampak yang besar terhadap arsitektur dan desain dari sistem distribusi. Hal ini karena gRPC menggunakan protokol HTTP/2 yang memungkinkan komunikasi yang efisien serta mendukung adanya _streaming_. Hal tersebut memungkinkan komunikasi yang cepat dan efisien. Tidak hanya itu, gRPC juga menggunakan protobuf untuk definisi _UI_. Dengan demikian, gRPC memberikan interoperabilitas yang lebih baik dengan berbagai teknologi dan platform. Secara keseluruhan hal ini mendukung sistem yang lebih modular, skalabel, dan mudah diintegrasikan dengan teknologi yang ada
+
+</details>
+
+<details>
+<summary>7. </summary>
+
+Penggunaan HTTP/2 sebagain _underlying protocol_ dari gRPC memiliki beberapa kelebihan jika dibandingkan dengan HTTP/1.1 atau HTTP/1.1 dengan WebSocket untuk REST APIs. Beberapa kelebih tersebut di antaranya adalah sebagai berikut.
+
+   - **Multiplexing**, yaitu dimungkinkannya banuak permintaan dan response dikirim secara bersamaan melalui koneksi tunggal sehingga meningkatkan kinerja dan efisiensi
+   - **Binary framing**, yaitu berkurangnya overhead karena format data yang kurang efisien
+   - **Server push**, yaitu dimungkinkannya server mengirimkan data ke _client_ tanpa permintaan sebelumnya
+     
+Meskipun memiliki kelebihan dibanding protokol lainnya, metode HTTP/2 juga memiliki beberapa kekurangan. Beberapa di antaranya adalah sebagai berikut. 
+   - HTTTP/2 memiliki kompleksitasi implementasi yang cenderung lebih rumit dibanding protokol lainnya
+   - Belum semua platform mendukung protokol HTTP/2
+   - Meskipun cenderung mencegah adanya overhead, protokol ini masih memiliki kemungkinan overhead ketika terjadi kasus tertentu seperti pada koneksi yang lambat atau dengan _payload_ kecil
+</details>
