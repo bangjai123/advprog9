@@ -63,7 +63,7 @@ Adopsi gRPC sebagai protokol komunikasi memiliki dampak yang besar terhadap arsi
 </details>
 
 <details>
-<summary>7. </summary>
+<summary>8. </summary>
 
 Penggunaan HTTP/2 sebagain _underlying protocol_ dari gRPC memiliki beberapa kelebihan jika dibandingkan dengan HTTP/1.1 atau HTTP/1.1 dengan WebSocket untuk REST APIs. Beberapa kelebih tersebut di antaranya adalah sebagai berikut.
 
