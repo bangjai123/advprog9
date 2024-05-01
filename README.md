@@ -17,6 +17,6 @@ Penerapan gRPC pada Rust memiliki beberapa celah yang dapat menjadi risiko. Bebe
 </details>
 
 <details>
-   <summar>3.</summar>
+<summar>3.</summar>
    
 </details> 
